@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media-styles.css">
+  <title>Школа успешных предпринимателей</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#0" class="logo"><img src="./assets/images/Logo-icon.png" alt="logo"></a>
+    <ul class="navbar__list">
+      <li class="navbar__item">
+        <a href="#0" class="navbar__link">Главная</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#0" class="navbar__link">О компании</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#0" class="navbar__link">Курсы</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#0" class="navbar__link">Статьи</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#0" class="navbar__link">Контакты</a>
+      </li>
+      <button class="signUp__btn">Записаться</button>
+    </ul>
+
+    <button class="burger__btn">
+      <img src="./assets/svg/nav-open.svg" alt="open" class="mobile__open">
+    </button>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__title">Школа успешных предпринимателей</h1>
+      <p class="header__description">
+        Уникальные курсы, экспертные знания и практические навыки для вашего процветающего бизнеса! Наша компания стремится помочь предпринимателям и руководителям развивать свои навыки и достигать новых высот в бизнесе. Мы предлагаем широкий спектр курсов, от маркетинга до финансов, чтобы обеспечить всестороннее обучение.
+      </p>
+
+      <!-- Cards -->
+      <div class="cards__container">
+        <div class="card__item">
+          <p class="card__description">
+            Уникальные обучающие программы, разработанные успешными предпринимателями с многолетним опытом.
+          </p>
+          <div class="card__number"></div>
+        </div>
+        <div class="card__item">
+          <p class="card__description">
+            Индивидуальный подход к каждому студенту, развитие навыков, соответствующих вашим целям.
+          </p>
+          <div class="card__number"></div>
+        </div>
+        <div class="card__item">
+          <p class="card__description">
+            Доступ к эксклюзивным ресурсам и материалам, которые помогут вам в реализации бизнес-идей.
+          </p>
+          <div class="card__number"></div>
+        </div>
+        <div class="card__item">
+          <p class="card__description">
+            Благоприятная атмосфера для нетворкинга, где вы сможете встретить единомышленников и потенциальных партнеров.
+          </p>
+          <div class="card__number"></div>
+        </div>
+        <div class="card__item">
+          <p class="card__description">
+            Наша команда наставников предоставляет постоянную поддержку и консультации, чтобы вы могли уверенно двигаться к успеху.
+          </p>
+          <div class="card__number"></div>
+        </div>
+        <div class="card__item">
+          <p class="card__description">
+            Регулярные мастер-классы и семинары с участием экспертов отрасли, что позволяет быть в курсе последних трендов и практик в бизнесе.
+          </p>
+          <div class="card__number"></div>
+        </div>
+      </div>
+      
+      <div class="header__btn">
+        <button class="more__btn">Узнать больше</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course -->
+  <section class="section__course">
+    <h2 class="section__title">Наши курсы</h2>
+    <div class="btns__switch">
+      <input type="radio" id="beginner" name="level" class="btn__input" checked>
+      <label for="beginner" class="btn__beginner">Для новичков</label>
+      <input type="radio" id="advanced" name="level" class="btn__input">
+      <label for="advanced" class="btn__advanced">Для продвинутых</label>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper cards__swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper__card swiper-slide">
+          <img src="./assets/images/Photo-future.jpg" class="swiper__image" alt="Будущее">
+          <p class="swiper__subtitle">Будущее</p>
+          <h3 class="swiper__title">5 ключевых навыков успешного предпринимателя и практические советы по их развитию</h3>
+          <div class="date__slide">
+            <time class="date" datetime="05-05-2025">05 мая 2025,</time>
+            <p class="card__author">Анна Иванова</p>
+          </div>
+        </div>
+        <div class="swiper__card swiper-slide">
+          <img src="./assets/images/photo-business.jpg" class="swiper__image" alt="Бизнес">
+          <p class="swiper__subtitle">Бизнес</p>
+          <h3 class="swiper__title">Искусство эффективного управления временем для бизнес-лидеров</h3>
+          <div class="date__slide">
+            <time class="date" datetime="01-05-2024">01 мая 2024,</time>
+            <p class="card__author">Дмитрий Смирнов</p>
+          </div>
+        </div>
+        <div class="swiper__card swiper-slide">
+          <img src="./assets/images/photo-medicine.jpg" class="swiper__image" alt="Медицина">
+          <p class="swiper__subtitle">Медицина</p>
+          <h3 class="swiper__title">Финансовая грамотность для успешного бизнеса</h3>
+          <div class="date__slide">
+            <time class="date" datetime="20-04-2024">20 апреля 2024,</time>
+            <p class="card__author">Анна Иванова</p>
+          </div>
+        </div>
+        <!-- Дублирующиеся карточки -->
+        <div class="swiper__card swiper-slide">
+          <img src="./assets/images/Photo-future.jpg" class="swiper__image" alt="Будущее">
+          <p class="swiper__subtitle">Будущее</p>
+          <h3 class="swiper__title">5 ключевых навыков успешного предпринимателя и практические советы по их развитию</h3>
+          <div class="date__slide">
+            <time class="date" datetime="05-05-2025">05 мая 2025,</time>
+            <p class="card__author">Анна Иванова</p>
+          </div>
+        </div>
+        <div class="swiper__card swiper-slide">
+          <img src="./assets/images/photo-business.jpg" class="swiper__image" alt="Бизнес">
+          <p class="swiper__subtitle">Бизнес</p>
+          <h3 class="swiper__title">Искусство эффективного управления временем для бизнес-лидеров</h3>
+          <div class="date__slide">
+            <time class="date" datetime="01-05-2024">01 мая 2024,</time>
+            <p class="card__author">Дмитрий Смирнов</p>
+          </div>
+        </div>
+        <div class="swiper__card swiper-slide">
+          <img src="./assets/images/photo-medicine.jpg" class="swiper__image" alt="Медицина">
+          <p class="swiper__subtitle">Медицина</p>
+          <h3 class="swiper__title">Финансовая грамотность для успешного бизнеса</h3>
+          <div class="date__slide">
+            <time class="date" datetime="20-04-2024">20 апреля 2024,</time>
+            <p class="card__author">Анна Иванова</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- FAQ section -->
+  <section class="section__faq">
+    <h2 class="faq__title">Вопросы и ответы</h2>
+    <div class="faq-item">
+      <button class="faq-question">
+        Какова продолжительность обучения в вашей школе?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Обучение в нашей школе длится 6 месяцев, включая теоретические и практические занятия.
+      </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+          Какие квалификации имеют ваши преподаватели?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          Все наши преподаватели — практикующие предприниматели с успешным опытом в различных отраслях.
+        </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Можно ли обучаться в дистанционном формате?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Да, мы предлагаем гибкие форматы обучения, включая онлайн-курсы и вебинары.
+      </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+          Предоставляете ли вы сертификаты по окончании курса?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          После успешного завершения обучения наши студенты получают сертификаты, подтверждающие их навыки и знания.
+        </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Есть ли возможность стажировок после обучения?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Да, мы сотрудничаем с различными компаниями, которые предлагают стажировки для наших выпускников.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer form -->
+
+  <footer class="footer">
+    <div class="footer__container">
+      <img src="./assets/images/plane-inverted.png" class="plane-inverted__img" alt="plane-inverted">
+      <img src="./assets/images/plane.png" class="plane__img" alt="plane">
+      <h2 class="footer__title">
+        Заполните форму, <br>чтобы попасть к нам на курс
+      </h2>
+
+      <div class="footer__form">
+        <div class="input__wrapper">
+          <img src="./assets/svg/user-name.svg" alt="name" class="input__icon">
+          <input type="text" class="footer__input" placeholder="Ваше имя">
+        </div>
+        <div class="input__wrapper">
+          <img src="./assets/svg/user-mail.svg" alt="email" class="input__icon">
+          <input type="email" class="footer__input" placeholder="Ваша email">
+        </div>
+        <div class="input__wrapper">
+          <img src="./assets/svg/user-phone.svg" alt="phone" class="input__icon">
+          <input type="tel" class="footer__input" placeholder="Ваш телефон">
+        </div>
+        <input type="checkbox" id="my-checkbox" class="footer__checkbox">
+        <label for="my-checkbox" class="footer__label">
+          <p>С текстом <span class="footer__link">лицензионного договора-оферты</span> согласен и даю согласие на обработку своих персональных данных. Подтверждаю, что ознакомлен с <span class="footer__link">Политикой обработки персональных данных</span></p>
+        </label>
+
+        <button class="footer__btn">Отправить</button>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
