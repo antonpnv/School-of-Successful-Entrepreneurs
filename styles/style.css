@@ -427,16 +427,9 @@ body {
 }
 
 .faq-icon {
-  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  display: inline-block;
   width: 42px;
   height: 42px;
-  border-radius: 50%;
-  border: 2px solid #041011;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 
 .faq-answer {
@@ -461,8 +454,10 @@ body {
 
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
-  color: #007188;
-  border: 2px solid #007188;
+}
+
+.faq-item.active .faq-icon path {
+  stroke: #007188;
 }
 
 /* Footer */
