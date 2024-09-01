@@ -40,6 +40,10 @@ body {
   align-items: center;
   gap: 44px;
   margin-left: 240px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .burger__btn {
@@ -51,9 +55,6 @@ body {
 }
 
 .navbar__link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 26px;
   color: #041011;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
@@ -301,7 +302,9 @@ body {
 .swiper__image {
   object-fit: cover;
   width: 100%;
+  height: 300px;
   margin-bottom: 28px;
+  background-color: #1E2E2E;
 }
 
 .swiper__subtitle {
