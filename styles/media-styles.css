@@ -13,7 +13,7 @@
   }
 
   .navbar__list {
-    margin-left: 15%;
+    margin-left: 14%;
     gap: 25px;
   }
 
@@ -22,15 +22,16 @@
   }
 
   .signUp__btn {
-    width: 140px;
-    margin-left: 30px;
+    width: 130px;
+    margin-left: 25px;
   }
 
   /* Header tablet */
   .header__container {
+    position: relative;
     width: 90%;
-    top: 5%;
-    left: 4%;
+    top: 40px;
+    left: 0;
     margin: 0 auto;
     padding: 40px 30px 0 30px;
   }
@@ -47,7 +48,6 @@
   }
 
   /* Cards tablet */
-
   .cards__container {
     margin: 0 auto;
     width: 100%;
@@ -73,9 +73,7 @@
   }
 
   /* Course tablet */
-
   .section__course {
-    width: 100%;
     padding-top: 70px;
   }
 
@@ -93,27 +91,17 @@
   }
 
   /* Swiper tablet */
-
   .cards__swiper {
-    width: 100%;
+    width: 98%;
   }
 
   .swiper__card {
     min-height: 650px;
-    width: calc(50% - 30px);
     margin-right: 20px;
   }
 
   .swiper__title {
     font-size: 22px;
-  }
-
-  .swiper-wrapper {
-    display: flex;
-  }
-
-  .swiper-slide {
-    flex: 0 0 auto;
   }
 
   .swiper-pagination-bullet {
@@ -153,57 +141,56 @@
     padding-top: 0;
   }
 
-    /* Footer tablet */
+  /* Footer tablet */
+  .footer {
+    min-height: auto;
+  }
 
-    .footer {
-      min-height: auto;
-    }
+  .footer__container {
+    width: 98%;
+    height: auto;
+    padding: 10px;
+  }
 
-    .footer__container {
-      width: 98%;
-      height: auto;
-      padding: 10px;
-    }
+  .plane-inverted__img {
+    top: 30%;
+    left: -5px;
+  }
 
-    .plane-inverted__img {
-      top: 30%;
-      left: -5px;
-    }
+  .plane__img {
+    top: 14%;
+    right: -5px;
+  }
 
-    .plane__img {
-      top: 14%;
-      right: -5px;
-    }
+  .footer__title {
+    width: 100%;
+    font-size: 40px;
+  }
 
-    .footer__title {
-      width: 100%;
-      font-size: 40px;
-    }
+  .footer__form {
+    width: 80%;
+  }
 
-    .footer__form {
-      width: 80%;
-    }
+  .input__wrapper {
+    width: 100%;
+  }
 
-    .input__wrapper {
-      width: 100%;
-    }
+  .footer__input {
+    width: 100%;
+    height: 65px;
+    font-size: 25px;
+  }
 
-    .footer__input {
-      width: 100%;
-      height: 65px;
-      font-size: 25px;
-    }
+  .footer__label {
+    width: 90%;
+    margin-left: 20px;
+    line-height: 15px;
+  }
 
-    .footer__label {
-      width: 90%;
-      margin-left: 20px;
-      line-height: 15px;
-    }
-
-    .footer__label::before {
-      left: -30px;
-      top: 30%;
-    }
+  .footer__label::before {
+    left: -30px;
+    top: 30%;
+  }
 }
 
 /* Mobile */
@@ -336,7 +323,7 @@
 
   /* SWIPER mobile */
   .cards__swiper {
-    width: 99%;
+    width: 98%;
     margin-bottom: 100px;
   }
 
@@ -356,10 +343,6 @@
 
   .swiper__title {
     font-size: 18px;
-  }
-
-  .swiper-wrapper {
-    display: flex;
   }
 
   .swiper-slide {
@@ -386,12 +369,12 @@
   }
 
   .faq-item.active {
-    height: 250px;
-    border-color: #007188;
+    min-height: 250px;
   }
 
-  .faq-item.active:nth-child(5) {
-    height: 250px;
+  .faq-item.active:nth-child(5),
+  .faq-item.active:nth-child(6) {
+    min-height: 300px;
   }
 
   .faq-question {
@@ -407,18 +390,15 @@
   }
 
   .faq-item.active .faq-answer {
-    height: auto;
     opacity: 1;
     padding: 10px 18px 0;
   }
 
   .faq-item.active:nth-child(5) .faq-answer {
-    height: auto;
     padding-top: 0;
   }
 
   /* Footer mobile */
-
   .footer__container {
     width: 96%;
     height: auto;
@@ -465,5 +445,4 @@
     left: -30px;
     top: 30%;
   }
-
 }

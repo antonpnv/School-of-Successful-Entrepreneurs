@@ -86,7 +86,6 @@ body {
 }
 
 /* Header */
-
 .header {
   position: relative;
   width: 100%;
@@ -198,7 +197,6 @@ body {
 }
 
 /* Course */
-
 .section__course {
   position: relative;
   display: flex;
@@ -352,8 +350,8 @@ body {
 }
 
 .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   background-color: #CCCCCC;
   opacity: 1;
   border-radius: 50%;
@@ -418,12 +416,12 @@ body {
 }
 
 .faq-item.active {
-  height: 140px;
+  min-height: 140px;
   border-color: #007188;
 }
 
 .faq-item.active:nth-child(5) {
-  height: 174px;
+  min-height: 174px;
 }
 
 .faq-icon {
@@ -443,13 +441,9 @@ body {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 140px;
+  max-height: 250px;
   opacity: 1;
   padding: 0 20px;
-}
-
-.faq-item.active:nth-child(5) .faq-answer {
-  max-height: 174px;
 }
 
 .faq-item.active .faq-icon {
