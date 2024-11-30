@@ -16,6 +16,7 @@ a {
 body {
   max-width: 1440px;
   font-family: "Rubik", sans-serif;
+  margin: 0 auto;
 }
 
 /* Navigation */
